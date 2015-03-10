@@ -63,6 +63,7 @@
     <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"file"</span> <span class="attribute">class</span>=<span class="value">"form-control wlg"</span> <span class="attribute">id</span>=<span class="value">"file"</span> <span class="attribute">placeholder</span>=<span class="value">"Choose file"</span> <span class="attribute">data-role</span>=<span class="value">"fileinput"</span> <span class="attribute">data-button</span>=<span class="value">"Upload"</span> <span class="attribute">required</span>&gt;</span>
   <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">form</span>&gt;</span></code></pre>
+<pre><code class="language-javascript">$('[data-role="fileinput"]').fileInput();</code></pre>
         </div>
       </div>
       <div class="row">
@@ -103,8 +104,12 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+        <script>
+          (function ($) {
+            'use strict';
+
+            $('[data-role="fileinput"]').fileInput();
+          }(jQuery));
+        </script>
 </body>
 </html>
