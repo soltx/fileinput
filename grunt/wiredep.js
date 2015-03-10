@@ -4,7 +4,14 @@ module.exports = {
     src: ['<%= config.src %>/index.html'],
     ignorePath: /^\/|\.\.\//,
     exclude: ['bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js'],
-    devDependencies: true
+    devDependencies: true,
+    overrides: {
+      'fileinput': {
+        main: [
+          '../../dist/fileinput.js'
+        ]
+      }
+    }
   },
   sass: {
     src: ['<%= config.src %>/styles/{,*/}*.{scss,sass}'],
@@ -13,8 +20,12 @@ module.exports = {
     overrides: {
       'fileinput': {
         main: [
-          '../../dist/fileinput.scss',
-          '../../dist/fileinput.js'
+          '../../dist/fileinput.scss'
+        ]
+      },
+      'assemble-syntax': {
+        main: [
+          './styles/bootstrap.scss'
         ]
       }
     }

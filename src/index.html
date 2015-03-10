@@ -22,6 +22,15 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <style>
+      .github-fork-ribbon {
+        background-color: #337ab7;
+      }
+      .github-fork-ribbon-wrapper.right .github-fork-ribbon {
+        top: 42px;
+        right: -43px;
+      }
+    </style>
 
   </head>
   <body>
@@ -46,6 +55,14 @@
               <input type="file" class="form-control wlg" id="file" placeholder="Choose file" data-role="fileinput" data-button="Upload" required>
             </div>
           </form>
+        </div>
+        <div class="col-sm-12">
+<pre><code class="language-handlebars"><span class="tag">&lt;<span class="title">form</span> <span class="attribute">class</span>=<span class="value">"form"</span> <span class="attribute">role</span>=<span class="value">"form"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"form-group"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"file"</span>&gt;</span>File input<span class="tag">&lt;/<span class="title">label</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"file"</span> <span class="attribute">class</span>=<span class="value">"form-control wlg"</span> <span class="attribute">id</span>=<span class="value">"file"</span> <span class="attribute">placeholder</span>=<span class="value">"Choose file"</span> <span class="attribute">data-role</span>=<span class="value">"fileinput"</span> <span class="attribute">data-button</span>=<span class="value">"Upload"</span> <span class="attribute">required</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">form</span>&gt;</span></code></pre>
         </div>
       </div>
       <div class="row">
@@ -72,6 +89,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="dist/fileinput.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

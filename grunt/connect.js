@@ -15,6 +15,7 @@ module.exports = {
         return [
           connect.static('.tmp'),
           connect().use('/bower_components', connect.static('./bower_components')),
+          connect().use('/dist', connect.static('./dist')),
           connect.static('src')
         ];
       }
