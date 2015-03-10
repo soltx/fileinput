@@ -1,0 +1,22 @@
+build:
+  - 'clean:docs'
+  - 'wiredep'
+  - 'useminPrepare'
+  - 'concurrent:docs'
+  - 'autoprefixer'
+  - 'concat'
+  - 'cssmin'
+  - 'uglify'
+  - 'copy:docs'
+  - 'modernizr'
+  - 'rev'
+  - 'usemin'
+  - 'htmlmin'
+
+default:
+  - 'newer:jshint'
+  - 'test'
+  - 'build'
+
+deploy:
+  - 'buildcontrol:pages'
