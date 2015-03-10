@@ -11,9 +11,13 @@
     <span class=tag>&lt;<span class=title>label</span> <span class=attribute>for</span>=<span class=value>"file"</span>&gt;</span>File input<span class=tag>&lt;/<span class=title>label</span>&gt;</span>
     <span class=tag>&lt;<span class=title>input</span> <span class=attribute>type</span>=<span class=value>"file"</span> <span class=attribute>class</span>=<span class=value>"form-control wlg"</span> <span class=attribute>id</span>=<span class=value>"file"</span> <span class=attribute>placeholder</span>=<span class=value>"Choose file"</span> <span class=attribute>data-role</span>=<span class=value>"fileinput"</span> <span class=attribute>data-button</span>=<span class=value>"Upload"</span> <span class=attribute>required</span>&gt;</span>
   <span class=tag>&lt;/<span class=title>div</span>&gt;</span>
-<span class=tag>&lt;/<span class=title>form</span>&gt;</span></code></pre> </div> </div> <div class=row> <div class=col-md-12> <h3>Instalation</h3> <pre><code>bower install fileinput --save</code></pre> </div> </div> </main> <footer class=container role=contentinfo> <div class=row> <div class=col-md-12> <p>See more information about fileinput <a href=https://github.com/brunowego/fileinput>here</a>.</p> </div> </div> </footer> <div class="github-fork-ribbon-wrapper right"> <div class=github-fork-ribbon> <a href=https://github.com/brunowego/fileinput>Fork me on GitHub</a> </div> </div> <script src=scripts/0fbd0401.vendor.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+<span class=tag>&lt;/<span class=title>form</span>&gt;</span></code></pre> <pre><code class=language-javascript>$('[data-role="fileinput"]').fileInput();</code></pre> </div> </div> <div class=row> <div class=col-md-12> <h3>Instalation</h3> <pre><code>bower install fileinput --save</code></pre> </div> </div> </main> <footer class=container role=contentinfo> <div class=row> <div class=col-md-12> <p>See more information about fileinput <a href=https://github.com/brunowego/fileinput>here</a>.</p> </div> </div> </footer> <div class="github-fork-ribbon-wrapper right"> <div class=github-fork-ribbon> <a href=https://github.com/brunowego/fileinput>Fork me on GitHub</a> </div> </div> <script src=scripts/0fbd0401.vendor.js></script> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');</script> <script src=scripts/d41d8cd9.main.js></script>  
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script> <script>(function ($) {
+            'use strict';
+
+            $('[data-role="fileinput"]').fileInput();
+          }(jQuery));</script>  
