@@ -5,7 +5,10 @@
     "Bruno Wego <brunowego@gmail.com>"
   ],
   "description": "Simple, lightweight, ready to use file input.",
-  "main": "./dist/fileinput.scss",
+  "main": [
+    "./dist/fileinput.scss",
+    "./dist/fileinput.js"
+  ],
   "keywords": [
     "file",
     "input",
